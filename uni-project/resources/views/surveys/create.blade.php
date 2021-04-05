@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="purpose">Title</label>
+                        <label for="purpose">Description</label>
                         <input name="purpose" type="text" class="form-control" id="purppse" aria-describedby="purposeHelp" placeholder="Enter Description">
                         <small id="purposeHelp" class="form-text text-muted">Please add a brief description about survey</small>
                         @error('purpose')
