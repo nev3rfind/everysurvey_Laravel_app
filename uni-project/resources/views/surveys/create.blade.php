@@ -10,21 +10,21 @@
                 <div class="card-body">
                    <form action="/surveys" method="post">
 
-                   @csrf 
+                   @csrf
 
                     <div class="form-group">
-                        <label for="title">Title</label>
+                        <label for="title">Title of Survey</label>
                         <input name="title" type="text" class="form-control" id="title" aria-describedby="titleHelp" placeholder="Enter Title">
                         <small id="emailHelp" class="form-text text-muted">Give your survey attracting title</small>
                         @error('title')
                             <small class="text-danger">{{$message}}</small>
                         @enderror
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="purpose">Title</label>
-                        <input name="purpose" type="text" class="form-control" id="purppse" aria-describedby="purposeHelp" placeholder="Enter Purpose">
-                        <small id="purposeHelp" class="form-text text-muted">Giving purpose increase responses.</small>
+                        <input name="purpose" type="text" class="form-control" id="purppse" aria-describedby="purposeHelp" placeholder="Enter Description">
+                        <small id="purposeHelp" class="form-text text-muted">Please add a brief description about survey</small>
                         @error('purpose')
                             <small class="text-danger">{{$message}}</small>
                         @enderror
