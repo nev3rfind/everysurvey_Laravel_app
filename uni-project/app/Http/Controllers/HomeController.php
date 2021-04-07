@@ -23,6 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      
+        $surveys = auth()->user()->surveys; //this user surveys only to this user
+  //dd($surveys);
+        return view('home', compact('surveys'));
     }
 }
