@@ -11,8 +11,6 @@
                    
                 </div>
             </div>
-<<<<<<< Updated upstream
-=======
 
             @foreach($survey->questions as $question)
             <div class="card mt-4">
@@ -41,7 +39,6 @@
                 </div>
             </div>
             @endforeach
->>>>>>> Stashed changes
         </div>
     </div>
 </div>

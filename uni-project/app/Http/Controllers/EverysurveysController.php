@@ -33,12 +33,9 @@ class EverysurveysController extends Controller
 
     public function show (\App\Models\Everysurvey $survey)
     {
-<<<<<<< Updated upstream
-=======
         $survey->load('questions.answers.responses');
        // dd($survey);
 
->>>>>>> Stashed changes
         return view('surveys.show', compact('survey'));
     }
 
