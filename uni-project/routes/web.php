@@ -24,3 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/surveys/create', 'App\Http\Controllers\EverysurveysController@create')->name('create');
 Route::post('/surveys', 'App\Http\Controllers\EverysurveysController@store');
 Route::get('/surveys/{survey}' , 'App\Http\Controllers\EverysurveysController@show');
+
+Route::get('surveys/{survey}/questions/create', 'App\Http\Controllers\SurveyController@create');
+Route::post('surveys/{survey}/questions', 'App\Http\Controllers\SurveyController@store');
+
+Route::get('/analyses/{survey}-{slug}', 'App\Http\Controllers\DeepSurveyController@show');
+Route::post('/analyses/{survey}-{slug}', 'App\Http\Controllers\DeepSurveyController@store');

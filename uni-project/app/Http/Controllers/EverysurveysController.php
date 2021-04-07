@@ -33,6 +33,9 @@ class EverysurveysController extends Controller
 
     public function show (\App\Models\Everysurvey $survey)
     {
+        $survey->load('questions.answers');
+       // dd($survey);
+
         return view('surveys.show', compact('survey'));
     }
 
